@@ -1,0 +1,91 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #e9edf0;
+  color: #1f2a33;
+  margin: 0;
+  padding: 24px 16px;
+}
+.wrap { max-width: 640px; margin: 0 auto; }
+h1 { margin: 0 0 4px; font-size: 1.6rem; }
+.sub { margin: 0 0 24px; color: #566673; }
+h2 { font-size: 1.05rem; margin: 28px 0 10px; }
+
+/* ===== CSS: kotak pintu loker ===== */
+.rak {
+  background: #cfd8de;
+  border: 3px solid #8fa0ab;
+  border-radius: 6px;
+  padding: 10px;
+}
+.loker {
+  display: inline-block;            /* berjajar menyamping */
+  width: 56px;
+  height: 72px;
+  margin: 5px;
+  background: #f4f7f9;
+  border: 2px solid #8fa0ab;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 4px 6px;
+  box-sizing: border-box;
+  vertical-align: top;
+  cursor: pointer;
+  position: relative;
+}
+.loker::after {                     /* gagang pintu */
+  content: "";
+  position: absolute;
+  right: 7px;
+  top: 30px;
+  width: 5px;
+  height: 14px;
+  border-radius: 3px;
+  background: #8fa0ab;
+}
+.loker:hover { background-color: #ffd9b8; }
+.loker.dipilih { background-color: #ffb877; border-color: #c4561a; }
+.loker.rusak {
+  background: repeating-linear-gradient(45deg, #fde2e2, #fde2e2 6px, #fff 6px, #fff 12px);
+  border-color: #d64545;
+  color: #b52a2a;
+  cursor: not-allowed;
+}
+.loker.rusak:hover { background-color: #fde2e2; }
+.loker small { position: absolute; bottom: 4px; left: 6px; font-size: 0.6rem; }
+
+/* ===== HTML: tabel tarif ===== */
+table { width: 100%; border-collapse: collapse; background: #fff; }
+th, td { border: 1px solid #c4cdd3; padding: 8px 12px; text-align: left; }
+th { background: #dde4e9; }
+
+/* ===== Form ===== */
+form {
+  background: #fff;
+  border: 1px solid #c4cdd3;
+  border-radius: 6px;
+  padding: 16px;
+}
+label { display: block; font-size: 0.9rem; margin-bottom: 6px; }
+select {
+  width: 100%;
+  padding: 9px;
+  font-size: 1rem;
+  border: 1px solid #8fa0ab;
+  border-radius: 4px;
+  background: #fff;
+}
+.info { color: #b52a2a; font-size: 0.85rem; margin: 6px 0 14px; }
+button {
+  width: 100%;
+  padding: 11px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: #c4561a;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover { background: #a64614; }
+#hasil { margin-top: 12px; font-weight: 600; color: #1d6b3a; min-height: 1.2em; }

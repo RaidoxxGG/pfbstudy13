@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Penyewaan Loker Kampus / Asrama</title>
+  <link rel="stylesheet" href="13.css">
+</head>
+<body>
+  <div class="wrap">
+    <h1>Penyewaan Loker Kampus / Asrama</h1>
+    <p class="sub">Sewa loker bulanan untuk mahasiswa &amp; penghuni asrama</p>
+
+    <h2>Pilih Loker</h2>
+    <div class="rak" id="rak"></div>
+
+    <h2>Tarif Loker</h2>
+    <table>
+      <tr>
+        <th>Ukuran</th>
+        <th>Dimensi</th>
+        <th>Tarif / Bulan</th>
+      </tr>
+      <tr>
+        <td>S</td>
+        <td>30×30 cm</td>
+        <td>Rp 30.000</td>
+      </tr>
+      <tr>
+        <td>M</td>
+        <td>30×45 cm</td>
+        <td>Rp 45.000</td>
+      </tr>
+      <tr>
+        <td>L</td>
+        <td>30×60 cm</td>
+        <td>Rp 60.000</td>
+      </tr>
+    </table>
+
+    <h2>Sewa Loker</h2>
+    <form id="formSewa">
+      <label for="nomor">Nomor Loker (1–10)</label>
+      <select id="nomor" name="nomor"></select>
+      <p class="info">Loker 4 &amp; 7 sedang rusak</p>
+      <button type="submit">Sewa</button>
+      <div id="hasil"></div>
+    </form>
+  </div>
+
+  <script src="13.js"></script>
+</body>
+</html>
